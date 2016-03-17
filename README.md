@@ -24,7 +24,7 @@ That's it!
 
 ### Simple Usage
 
-```android
+```java
 Blanket blanket = Blanket.with(this);
 blanket.textView(R.id.textviewHelloWorld)
     .text("teste")
@@ -55,7 +55,7 @@ View Support:
 - View.
 
 ### BlanketBag Usage
-```android
+```java
 BlanketBag.wrap(new EditText()) // or a reference
     .text("teste")
     .textColor(ContextCompat.getColor(this, R.color.colorAccent))
@@ -65,7 +65,7 @@ BlanketBag.wrap(new EditText()) // or a reference
 ```
 
 ### ViewBinder Usage
-```android
+```java
 ViewBinder viewBinder = ViewBinderFactory.create(this);
 TextView textView = viewBinder.findById(R.id.textView);
 ```
